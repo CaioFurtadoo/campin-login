@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>camp.in</title>
+    </head>
+    <body>
+        <div id="geral">
+            <div class="login">
+                <header>
+                    <img src="./assets/images/logo.svg" alt="logo" />
+                </header>
+                <div class="menuLogin">
+                    <div class="texts">
+                        <div class="titulo">
+                            <img
+                                src="./assets/images/log-in.svg"
+                                alt="log-in image"
+                            />
+                            <h2>Faça seu login</h2>
+                        </div>
+                        <p id="paragrafoT">
+                            Entre com suas informações de cadastro.
+                        </p>
+                        <div class="logins">
+                            <div class="email">
+                                <p>E-mail</p>
+                                <div class="input">
+                                    <input
+                                        type="email"
+                                        class="inputs"
+                                        id="email"
+                                        value="Digite seu e-mail"
+                                    />
+                                </div>
+                            </div>
+                            <div class="senha">
+                                <p>senha</p>
+                                <div class="input">
+                                    <input
+                                        type="password"
+                                        class="inputs"
+                                        id="senha"
+                                        value="Digite sua senha"
+                                    />
+                                    <input
+                                        type="button"
+                                        onclick="show()"
+                                        id="vision"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxs">
+                            <div id="checkbox">
+                                <label class="container"
+                                    ><p>Lembre-me</p>
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <p id="yellow">Esqueci minha senha</p>
+                        </div>
+                        <div class="final">
+                            <a href="#">
+                                <div class="button">
+                                    <p>ENTRAR</p>
+                                </div>
+                            </a>
+                            <div class="teste">
+                                <p id="corFinal">Não tem uma conta?</p>
+                                <a id="final" href="#"> Registre-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="./assets/images/side-image-2x.jpg" alt="" />
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

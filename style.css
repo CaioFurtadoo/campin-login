@@ -1,0 +1,329 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: poppins, sans-serif;
+}
+header {
+    height: 90px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 40px;
+}
+p {
+    color: var(--text-base);
+}
+#paragrafoT {
+    margin-top: 5px;
+    margin-bottom: 27px;
+}
+
+#geral {
+    display: flex;
+}
+
+.login {
+    width: 50vw;
+}
+
+.imagem img {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    filter: contrast(1.25);
+    right: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.menuLogin {
+    margin: auto;
+    margin-top: 35px;
+    width: 572px;
+    height: 542px;
+    background-color: var(--form-background);
+    border-radius: 5px;
+}
+.texts {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 119px;
+}
+.titulo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+.titulo h2 {
+    color: var(--text-title);
+    font-weight: 600;
+}
+
+.input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input img {
+    position: absolute;
+    left: 10px;
+}
+
+.logins p {
+    margin-bottom: 4px;
+}
+.logins {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs {
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+    padding: 14px;
+    padding-right: 30px;
+    padding-left: 35px;
+    width: 100%;
+    gap: 5px;
+    align-items: center;
+    font-size: 14px;
+    outline-style: none;
+    background-color: var(--form-background);
+    color: var(--text-base);
+}
+
+#senha {
+    background-image: url(./assets/images/lock.svg);
+    background-repeat: no-repeat;
+    background-position: calc(3%) center;
+}
+
+#email {
+    background-image: url(./assets/images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: calc(3%) center;
+}
+
+#vision {
+    background-image: url(./assets/images/eye-slash.svg);
+    width: 24px;
+    height: 24px;
+    background-color: var(--form-background);
+    outline-style: none;
+    border: none;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10px;
+    transition: 0.5s;
+}
+
+#vision:hover {
+    transform: scale(1.1);
+}
+
+.inputs:focus {
+    border: 2px solid var(--primary-color);
+}
+#senha:focus {
+    background-image: url(./assets/images/lock-focus.svg);
+}
+#email:focus {
+    background-image: url(./assets/images/mail-focus.svg);
+}
+
+.yellow {
+    background-image: url(./assets/images/eye.svg) !important;
+}
+
+.boxs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+    align-items: center;
+    text-align: center;
+}
+#checkbox {
+    display: flex;
+    gap: 4px;
+}
+
+#yellow {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.5s;
+}
+#yellow:hover {
+    transform: scale(1.03);
+}
+
+/* The container */
+.container {
+    margin-top: 9px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    border: 1px solid var(--text-base);
+    border-radius: 5px;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--form-background);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: var(--background);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 7.5px;
+    top: 1.5px;
+    width: 5px;
+    height: 12px;
+    border: solid var(--form-background);
+    border-width: 0 2.2px 2.2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+.button {
+    margin-top: 12px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 51px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    margin-bottom: 14px;
+    transition: 0.5s;
+}
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button p {
+    padding-top: 10px;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+    color: #473404;
+}
+
+.final {
+    align-items: center;
+    text-align: center;
+}
+
+#corFinal {
+    color: #e5b231;
+    font-weight: 300;
+}
+#final {
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+#final:hover {
+    transform: scale(1.02);
+}
+.teste {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width: 1160px) {
+    .menuLogin {
+        z-index: 3;
+    }
+    .login {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .imagem img {
+        display: none;
+    }
+
+    .menuLogin {
+        background-color: var(--background);
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 578px) {
+    .texts {
+        margin: auto;
+        width: 344px;
+        padding: 20px;
+    }
+}
