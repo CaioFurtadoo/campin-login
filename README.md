@@ -3,7 +3,7 @@
 <h1 align="center">Campin Login</h1>
 
 <p align="center">
- Opa tudo bem!! dando continuidade aos meus estudos em responsividade, criei este projeto de login de uma empresa ficticia campin. Portanto tive que utilizar inputs e o famoso media queries! uma experiencia um tanto divertida com html, css e JS!<br/>
+ O Campin é um projeto de solução real e plataforma web voltada para a organização de atividades de camping. Seu principal objetivo é integrar as necessidades dos campistas em um único ambiente digital, facilitando o planejamento e proporcionando uma experiência completa e prática. Feito em React, TypeScript e Tailwind<br/>
 <a href="https://github.com/CaioFurtadoo">Veja mais projetos aqui</a>
 </p>
 
@@ -17,11 +17,7 @@
 
 <p align="center">
 
-
-
-https://github.com/CaioFurtadoo/campin-login/assets/164534948/0224701e-058a-4dcc-856c-f19c00ba7f7d
-
-
+https://github.com/user-attachments/assets/1692d4fc-a7e8-4d12-b86c-13c8c3df849e
 
 </p>
 
@@ -29,13 +25,14 @@ https://github.com/CaioFurtadoo/campin-login/assets/164534948/0224701e-058a-4dcc
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
--   HTML e CSS
+-   React
+-   TypeScript
+-   Tailwind
 -   Git e Github
--   JavaScript
 
 ## 💻 Projeto
 
-O Projeto foi realizado com o intuito de estudo e pratica, treinamento de css, html e Javascript. Principalmente a questão da responsividade, pois é de extrema importancia que o usuario tenha total acesso ao site, visto que a maior parte dos acessos é feito pelos dispositivos moveis. Portanto, entende-se como importante prezar por esse ponto e apartir disso que usaremos o famoso media queries, uma ferramenta incrivel que nos auxilia nesse projeto!
+O Campin será uma plataforma web voltada para entusiastas do camping, oferecendo recursos como um marketplace de equipamentos, um localizador de áreas de camping, um planejador de viagens e uma comunidade interativa. Inicialmente, o sistema conta apenas com cadastro e login, mas será expandido para incluir perfis personalizados, avaliações, recomendações e integração com APIs externas para mapas e pagamentos, tornando-se uma ferramenta completa para campistas.
 
 ## 🔖 Layout
 
